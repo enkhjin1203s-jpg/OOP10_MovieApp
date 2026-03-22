@@ -47,7 +47,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         // Title
         holder.titleText.setText(movie.getTitle());
 
-        // Year — show "Year: Unknown" when year is null (was missing or invalid)
+        // Year 
         if (movie.getYear() != null) {
             holder.yearText.setText("Year: " + movie.getYear());
         } else {
