@@ -41,9 +41,8 @@ public class JsonUtils {
                     Integer year = null;
                     if (obj.has("year") && !obj.isNull("year")) {
                         try {
-                            year = obj.getInt("year");  // works for numeric and quoted numeric
+                            year = obj.getInt("year");  
                         } catch (Exception e) {
-                            // Value is a non-numeric string like "nineteen-ninety-four"
                             Log.w(TAG, "Could not parse year at index " + i + ": " + e.getMessage());
                             year = null;
                         }
